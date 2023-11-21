@@ -213,23 +213,23 @@ INSERT INTO customer(Cnm,C_name,City,Rating,SNO)VALUES(204,'Grass','Barcelona',1
 INSERT INTO customer(Cnm,C_name,City,Rating,SNO)VALUES(206,'Clemens','London',300,1007);
 INSERT INTO customer(Cnm,C_name,City,Rating,SNO)VALUES(207,'Pereira','Roe',100,1004);
 
-Q - A)All orders for more than $1000. 
+Q.13.All orders for more than $1000. 
 
 Answer:-Select * from salesperson where SNO > 1000;
 
-Q - B)Names and cities of all salespeople in London with commission above 0.12 
+Q.14.Names and cities of all salespeople in London with commission above 0.12 
 
 Answer:-SELECT SNAME, CITY , COMM FROM salesperson WHERE COMM > 0.12 AND CITY = 'London';
 
-Q - C)All salespeople either in Barcelona or in London
+Q.15.All salespeople either in Barcelona or in London
 
 Answer:-Select SNAME, CITY from salesperson where CITY in ('Barcelona','London');
 
-Q - D)All salespeople with commission between 0.10 and 0.12. (Boundary values should be excluded). 
+Q.16.All salespeople with commission between 0.10 and 0.12. (Boundary values should be excluded). 
 
 Answer:-SELECT SNAME , COMM FROM salesperson WHERE COMM > 0.10 AND COMM < 0.12;
 
-Q - E)All customers excluding those with rating <= 100 unless they are located in Rome 
+Q.17.All customers excluding those with rating <= 100 unless they are located in Rome 
 
 Answer:-SELECT C_name FROM customer WHERE Rating <= 100 OR City = 'Rome';
 
