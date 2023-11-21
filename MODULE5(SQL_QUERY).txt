@@ -217,17 +217,21 @@ Q.13.All orders for more than $1000.
 
 Answer:-Select * from salesperson where SNO > 1000;
 
+
 Q.14.Names and cities of all salespeople in London with commission above 0.12 
 
 Answer:-SELECT SNAME, CITY , COMM FROM salesperson WHERE COMM > 0.12 AND CITY = 'London';
+
 
 Q.15.All salespeople either in Barcelona or in London
 
 Answer:-Select SNAME, CITY from salesperson where CITY in ('Barcelona','London');
 
+
 Q.16.All salespeople with commission between 0.10 and 0.12. (Boundary values should be excluded). 
 
 Answer:-SELECT SNAME , COMM FROM salesperson WHERE COMM > 0.10 AND COMM < 0.12;
+
 
 Q.17.All customers excluding those with rating <= 100 unless they are located in Rome 
 
@@ -241,6 +245,7 @@ Q.18.Write a SQL statement that displays all the information about all
 
      SELECT * FROM salesman;
 
+
 Q 19.  From the following table, write a SQL query to find orders that are 
        delivered by a salesperson with ID. 5001. Return ord_no, ord_date, 
        purch_amt. 
@@ -251,12 +256,14 @@ Q 19.  From the following table, write a SQL query to find orders that are
       WHERE salesman_id=5001;
 
 
+
 Q20. From the following table, write a SQL query to select a range of 
      products whose price is in the range Rs.200 to Rs.600. Begin and end 
      values are included. Return pro_id, pro_name, pro_price, and pro_com.
 
      SELECT * FROM item_mast
-     WHERE pro_price BETWEEN 200 AND 600;20.
+     WHERE pro_price BETWEEN 200 AND 600;
+
 
 
 Q.21. From the following table, write a SQL query to calculate the average 
@@ -267,12 +274,14 @@ Q.21. From the following table, write a SQL query to calculate the average
 
 
 
+
 Q.22 From the following table, write a SQL query to display the pro_name 
      as 'Item Name' and pro_priceas 'Price in Rs.' 
 
 
     SELECT pro_name as "Item Name", pro_price AS "Price in Rs."
     FROM item_mast;
+
 
 
 Q.23. From the following table, write a SQL query to find the items whose 
@@ -287,6 +296,7 @@ Q.23. From the following table, write a SQL query to find the items whose
     ORDER BY pro_price DESC, pro_name;
 
 
+
 Q.24.From the following table, write a SQL query to calculate average 
      price of the items for each company. Return average price and company 
      code.
@@ -294,6 +304,7 @@ Q.24.From the following table, write a SQL query to calculate average
     SELECT AVG(pro_price), pro_com
     FROM item_mast
     GROUP BY pro_com;
+
 
 
 
